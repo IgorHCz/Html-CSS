@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        p{
+        text-indent : 50px
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagens de tamanhos difersificados</h1>
+    <p>Abra esse site em outros dispositivos ou diminua a janela do site</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/p.png">
+        <source media="(max-width:1050px)" srcset="imagens/m.png">
+        <img src="imagens/g.png" alt="Imagem Flexivel">
+    </picture>
+    <h2>Lembre-se você não tem inimigos</h2>
+    <audio src="imagens/enemies.mp4" controls autoplay loop></audio>
+    <!--<audio preload="metadata" controls autoplay>
+        <source src="imagens/enemies.mp4" type="audio/mpge">
+        <source src="imagens/enemies.ogg" type=audio/ogg>
+        caso tenham outros tipos já que um navegador pode não ser compativel com mp3
+        <\audio>-->
+    <video src="video/vinland-saga.mp4" poster="imagens/caramba.png" controls width="700px"></video>
+    <!--video controls
+        source src="video/vinland-saga.mp4 type="video/mp4"
+        source src="video/vinland-sage.mv4" type="video/mp4"
+        isso é caso o navegador não seja compativel com um tipo expecifico-->
+</body>
+</html>
